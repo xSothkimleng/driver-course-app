@@ -1,42 +1,41 @@
 export const IconLogo = {
   home: (
     <svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-      <g id='SVGRepo_bgCarrier' stroke-width='0'></g>
-      <g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g>
+      <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
+      <g id='SVGRepo_tracerCarrier' strokeLinecap='round' strokeLinejoin='round'></g>
       <g id='SVGRepo_iconCarrier'>
-        {' '}
         <path
           d='M2 12.2039C2 9.91549 2 8.77128 2.5192 7.82274C3.0384 6.87421 3.98695 6.28551 5.88403 5.10813L7.88403 3.86687C9.88939 2.62229 10.8921 2 12 2C13.1079 2 14.1106 2.62229 16.116 3.86687L18.116 5.10812C20.0131 6.28551 20.9616 6.87421 21.4808 7.82274C22 8.77128 22 9.91549 22 12.2039V13.725C22 17.6258 22 19.5763 20.8284 20.7881C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.7881C2 19.5763 2 17.6258 2 13.725V12.2039Z'
           stroke='#1C274C'
-          stroke-width='1.5'></path>{' '}
-        <path d='M15 18H9' stroke='#1C274C' stroke-width='1.5' stroke-linecap='round'></path>{' '}
+          strokeWidth='1.5'></path>{' '}
+        <path d='M15 18H9' stroke='#1C274C' strokeWidth='1.5' strokeLinecap='round'></path>{' '}
       </g>
     </svg>
   ),
   book: (
     <svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-      <g id='SVGRepo_bgCarrier' stroke-width='0'></g>
-      <g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g>
+      <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
+      <g id='SVGRepo_tracerCarrier' strokeLinecap='round' strokeLinejoin='round'></g>
       <g id='SVGRepo_iconCarrier'>
         {' '}
         <path
           d='M4 8C4 5.17157 4 3.75736 4.87868 2.87868C5.75736 2 7.17157 2 10 2H14C16.8284 2 18.2426 2 19.1213 2.87868C20 3.75736 20 5.17157 20 8V16C20 18.8284 20 20.2426 19.1213 21.1213C18.2426 22 16.8284 22 14 22H10C7.17157 22 5.75736 22 4.87868 21.1213C4 20.2426 4 18.8284 4 16V8Z'
           stroke='#1C274D'
-          stroke-width='1.5'></path>{' '}
+          strokeWidth='1.5'></path>{' '}
         <path
           d='M19.8978 16H7.89778C6.96781 16 6.50282 16 6.12132 16.1022C5.08604 16.3796 4.2774 17.1883 4 18.2235'
           stroke='#1C274D'
-          stroke-width='1.5'></path>{' '}
-        <path d='M8 7H16' stroke='#1C274D' stroke-width='1.5' stroke-linecap='round'></path>{' '}
-        <path d='M8 10.5H13' stroke='#1C274D' stroke-width='1.5' stroke-linecap='round'></path>{' '}
-        <path d='M19.5 19H8' stroke='#1C274D' stroke-width='1.5' stroke-linecap='round'></path>{' '}
+          strokeWidth='1.5'></path>{' '}
+        <path d='M8 7H16' stroke='#1C274D' strokeWidth='1.5' strokeLinecap='round'></path>
+        <path d='M8 10.5H13' stroke='#1C274D' strokeWidth='1.5' strokeLinecap='round'></path>
+        <path d='M19.5 19H8' stroke='#1C274D' strokeWidth='1.5' strokeLinecap='round'></path>
       </g>
     </svg>
   ),
   megaPhone: (
     <svg fill='#000000' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'>
-      <g id='SVGRepo_bgCarrier' stroke-width='0'></g>
-      <g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g>
+      <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
+      <g id='SVGRepo_tracerCarrier' strokeLinecap='round' strokeLinejoin='round'></g>
       <g id='SVGRepo_iconCarrier'>
         {' '}
         <g data-name='09 promotion' id='_09_promotion'>
@@ -52,11 +51,11 @@ export const IconLogo = {
     <svg
       viewBox='0 0 64 64'
       xmlns='http://www.w3.org/2000/svg'
-      stroke-width='3'
+      strokeWidth='3'
       stroke='#000000'
       fill='none'>
-      <g id='SVGRepo_bgCarrier' stroke-width='0'></g>
-      <g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g>
+      <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
+      <g id='SVGRepo_tracerCarrier' strokeLinecap='round' strokeLinejoin='round'></g>
       <g id='SVGRepo_iconCarrier'>
         <circle cx='32' cy='18.14' r='11.14'></circle>
         <path d='M54.55,56.85A22.55,22.55,0,0,0,32,34.3h0A22.55,22.55,0,0,0,9.45,56.85Z'></path>

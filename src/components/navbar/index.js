@@ -8,15 +8,26 @@ const Wrapper = styled.div`
   position: fixed;
   width: 100%;
   bottom: 0;
+  padding: 1rem;
+  @media (max-width: 640px) {
+    padding: 0.5rem;
+  }
 `;
 const Menu = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  @media (max-width: 640px) {
+    justify-content: space-around;
+  }
   li {
     padding: 1rem 1rem;
     margin: 0 1rem;
     border-radius: 0.5rem;
+    @media (max-width: 640px) {
+      margin: 0;
+      padding: 0.5rem;
+    }
   }
   li:hover {
     background-color: #d9d9d9;
@@ -24,6 +35,10 @@ const Menu = styled.ul`
   li svg {
     width: 3rem;
     height: 3rem;
+    @media (max-width: 640px) {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 `;
 
