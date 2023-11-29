@@ -8,8 +8,12 @@ const Wrapper = styled.div`
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: fixed;
   width: 100%;
+  height: 9vh;
   bottom: 0;
-  padding: 1rem;
+  // padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 640px) {
     padding: 0.5rem;
   }
@@ -18,11 +22,13 @@ const Menu = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
   @media (max-width: 640px) {
+    width: 100%;
     justify-content: space-around;
   }
   li {
-    padding: 1rem 1rem;
+    // padding: 1rem 1rem;
     margin: 0 1rem;
     border-radius: 0.5rem;
     @media (max-width: 640px) {
@@ -46,18 +52,16 @@ const Menu = styled.ul`
 const Navbar = () => {
   return (
     <Wrapper>
-      <div>
-        <Menu>
-          <li>
-            <Link href='/'>{IconLogo.home}</Link>
-          </li>
-          <li>
-            <Link href='/lab'>{IconLogo.book}</Link>
-          </li>
-          <li>{IconLogo.megaPhone}</li>
-          <li>{IconLogo.person}</li>
-        </Menu>
-      </div>
+      <Menu>
+        <li>
+          <Link href='/'>{IconLogo.home}</Link>
+        </li>
+        <li>
+          <Link href='/study'>{IconLogo.book}</Link>
+        </li>
+        <li>{IconLogo.megaPhone}</li>
+        <li>{IconLogo.person}</li>
+      </Menu>
     </Wrapper>
   );
 };

@@ -11,11 +11,9 @@ const Card = styled.div`
   overflow: hidden;
 `;
 
-const ImageContainer = styled.div``;
-
 export default function Home() {
   return (
-    <main>
+    <main className='h-[100vh] pb-[9vh]'>
       <div>
         <PageHeader>
           <div className='p-[1rem] text-left md:text-center'>
