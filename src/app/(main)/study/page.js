@@ -1,7 +1,28 @@
 import PageHeader from '@/components/page-header';
-import Card from '@/components/card';
-import { IconLogo } from '@/utils/icon';
-import Link from 'next/link';
+import ImageDetailCard from '@/components/card/image-detail';
+
+const StudyList = [
+  {
+    title: 'Traffic Law',
+    url: '/study/courses/traffic-law',
+  },
+  {
+    title: 'Customer Service',
+    url: '/study/courses/customer-service',
+  },
+  {
+    title: 'Road Sign',
+    url: '/study/courses/traffic-sign',
+  },
+  {
+    title: 'Test',
+    url: '/study/test',
+  },
+  {
+    title: 'Practice Question',
+    url: '/study/test',
+  },
+];
 
 const LabPage = () => {
   return (
@@ -14,56 +35,9 @@ const LabPage = () => {
         </PageHeader>
       </div>
       <div className='grid grid-cols-1 gap-4 p-[5%]'>
-        <Card>
-          <Link href='/study/courses/traffic-law'>
-            <div className='h-[10vh] p-2 flex items-center'>
-              <div className='w-[25%] h-full flex items-center'>{IconLogo.questionPencil}</div>
-              <div className='p-4 w-full '>
-                <p className='font-medium tracking-wider pl-5 text-[#F0A714]'>Traffic Law</p>
-              </div>
-            </div>
-          </Link>
-        </Card>
-        <Card>
-          <Link href='/study/courses/customer-service'>
-            <div className='h-[10vh] p-2 flex items-center'>
-              <div className='w-[25%] h-full flex items-center'>{IconLogo.questionPencil}</div>
-              <div className='p-4 w-full '>
-                <p className='font-medium tracking-wider pl-5 text-[#F0A714]'>Customer Service</p>
-              </div>
-            </div>
-          </Link>
-        </Card>
-        <Card>
-          <Link href='/study/courses/traffic-sign'>
-            <div className='h-[10vh] p-2 flex items-center'>
-              <div className='w-[25%] h-full flex items-center'>{IconLogo.questionPencil}</div>
-              <div className='p-4 w-full '>
-                <p className='font-medium tracking-wider pl-5 text-[#F0A714]'>Road Sign</p>
-              </div>
-            </div>
-          </Link>
-        </Card>
-        <Card>
-          <Link href='/study/test'>
-            <div className='h-[10vh] p-2 flex items-center'>
-              <div className='w-[25%] h-full flex items-center'>{IconLogo.questionPencil}</div>
-              <div className='p-4 w-full'>
-                <p className='font-medium tracking-wider pl-5 text-[#F0A714]'>Test</p>
-              </div>
-            </div>
-          </Link>
-        </Card>
-        <Card>
-          <Link href='/study/test'>
-            <div className='h-[10vh] p-2 flex items-center'>
-              <div className='w-[25%] h-full flex items-center'>{IconLogo.questionPencil}</div>
-              <div className='p-4 w-full '>
-                <p className='font-medium tracking-wider pl-5 text-[#F0A714]'>Practice Question</p>
-              </div>
-            </div>
-          </Link>
-        </Card>
+        {StudyList.map((item, index) => (
+          <ImageDetailCard key={index} detail={item.title} url={item.url} />
+        ))}
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import PageHeader from '@/components/page-header';
 import Card from '@/components/card';
 import Link from 'next/link';
 import { IconLogo } from '@/utils/icon';
+import ImageDetailCard from '@/components/card/image-detail';
 
 const Data = [
   {
@@ -34,17 +35,7 @@ const CoursePage = () => {
       </div>
       <div className='grid grid-cols-1 gap-4 p-[5%]'>
         {Data.map((item, index) => (
-          <Card key={index}>
-            <Link href={item.link}>
-              <div className='h-[10vh] p-2 flex items-center justify-between'>
-                <div className='w-[25%] h-full flex items-center'>{IconLogo.questionPencil}</div>
-                <div className='p-4 w-full '>
-                  <p className='font-medium tracking-wider pl-5 text-[#F0A714]'>{item?.name}</p>
-                </div>
-                <div className='w-10 h-10 flex items-center '>{IconLogo?.arrowRight}</div>
-              </div>
-            </Link>
-          </Card>
+          <ImageDetailCard key={index} detail={item.name} url={item.link} arrowRight />
         ))}
       </div>
     </div>

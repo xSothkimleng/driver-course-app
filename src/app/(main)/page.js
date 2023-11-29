@@ -14,7 +14,7 @@ const Card = styled.div`
 
 export default function Home() {
   return (
-    <main className='h-[100vh] pb-[9vh]'>
+    <main className='h-[100vh]'>
       <div>
         <PageHeader>
           <div className='p-[1rem] text-left md:text-center'>

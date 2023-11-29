@@ -59,7 +59,9 @@ const Navbar = () => {
         <li>
           <Link href='/study'>{IconLogo.book}</Link>
         </li>
-        <li>{IconLogo.megaPhone}</li>
+        <li>
+          <Link href='/opportunity'> {IconLogo.megaPhone}</Link>
+        </li>
         <li>{IconLogo.person}</li>
       </Menu>
     </Wrapper>
