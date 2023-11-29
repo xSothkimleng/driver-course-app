@@ -5,33 +5,28 @@ import { IconLogo } from '@/utils/icon';
 
 const Data = [
   {
-    name: 'Learner Drivers First Ever Driving Lesson - #1',
+    name: 'How to deal with rude customers',
     link: '/',
     readTime: '20 min',
   },
   {
-    name: 'Learner Drivers First Ever Driving Lesson - #2',
+    name: 'How to deal with difficult customers',
     link: '/',
     readTime: '20 min',
   },
   {
-    name: 'Learner Drivers First Ever Driving Lesson - #3',
+    name: 'How to deal with angry customers',
     link: '/',
     readTime: '20 min',
   },
   {
-    name: 'Learner Drivers First Ever Driving Lesson - #4',
-    link: '/',
-    readTime: '20 min',
-  },
-  {
-    name: 'Learner Drivers First Ever Driving Lesson - #5',
+    name: 'How to deal with customers',
     link: '/',
     readTime: '20 min',
   },
 ];
 
-const TrafficSignPage = () => {
+const CustomerServicePage = () => {
   return (
     <div>
       <div>
@@ -56,4 +51,4 @@ const TrafficSignPage = () => {
   );
 };
 
-export default TrafficSignPage;
+export default CustomerServicePage;

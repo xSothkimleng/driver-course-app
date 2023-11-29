@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning={true}>
         <ThemeProvider>
           <StyledComponentsRegistry>
-            {/* <NextTopLoader /> */}
+            <NextTopLoader />
             <Navbar />
             {children}
           </StyledComponentsRegistry>

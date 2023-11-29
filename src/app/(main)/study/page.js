@@ -15,11 +15,21 @@ const LabPage = () => {
       </div>
       <div className='grid grid-cols-1 gap-4 p-[5%]'>
         <Card>
-          <Link href='/study/courses'>
+          <Link href='/study/courses/traffic-law'>
             <div className='h-[10vh] p-2 flex items-center'>
               <div className='w-[25%] h-full flex items-center'>{IconLogo.questionPencil}</div>
               <div className='p-4 w-full '>
-                <p className='font-medium tracking-wider pl-5 text-[#F0A714]'>Study</p>
+                <p className='font-medium tracking-wider pl-5 text-[#F0A714]'>Traffic Law</p>
+              </div>
+            </div>
+          </Link>
+        </Card>
+        <Card>
+          <Link href='/study/courses/customer-service'>
+            <div className='h-[10vh] p-2 flex items-center'>
+              <div className='w-[25%] h-full flex items-center'>{IconLogo.questionPencil}</div>
+              <div className='p-4 w-full '>
+                <p className='font-medium tracking-wider pl-5 text-[#F0A714]'>Customer Service</p>
               </div>
             </div>
           </Link>

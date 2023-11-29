@@ -3,6 +3,7 @@ import PageHeader from '@/components/page-header';
 import Image from 'next/image';
 import styled from 'styled-components';
 import LessonTracker from '@/components/tracker/lesson-tracker';
+import Link from 'next/link';
 
 const Card = styled.div`
   background-color: #fff;
@@ -42,21 +43,23 @@ export default function Home() {
         <div>
           <div className='flex justify-between items-end mt-5 mb-2'>
             <p className='font-bold text-2xl'>Quick Access</p>
-            <p style={{ fontSize: '13px' }}>see more</p>
+            {/* <p style={{ fontSize: '13px' }}>see more</p> */}
           </div>
           <div className='grid grid-cols-2 gap-3'>
             <Card className='p-2'>
-              <div>
-                <div className='w-[100%] h-[10rem] flex items-center'>
-                  <Image
-                    src={'/assets/image/traffic.png'}
-                    width={100}
-                    height={100}
-                    alt='User_Image'
-                    style={{ width: '100%', height: '80%', objectFit: 'contain' }}
-                  />
+              <Link href='/study/courses/traffic-law'>
+                <div>
+                  <div className='w-[100%] h-[10rem] flex items-center'>
+                    <Image
+                      src={'/assets/image/traffic.png'}
+                      width={100}
+                      height={100}
+                      alt='User_Image'
+                      style={{ width: '100%', height: '80%', objectFit: 'contain' }}
+                    />
+                  </div>
                 </div>
-              </div>
+              </Link>
               <div>
                 <p className='text-center text-[#F0A714] tracking-[0.05rem] font-medium'>
                   Traffic Law
@@ -64,40 +67,44 @@ export default function Home() {
               </div>
             </Card>
             <Card className='p-2'>
-              <div>
-                <div className='w-[100%] h-[10rem] flex items-center'>
-                  <Image
-                    src={'/assets/image/driver.png'}
-                    width={200}
-                    height={200}
-                    alt='User_Image'
-                    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-                  />
+              <Link href='/study/courses/customer-service'>
+                <div>
+                  <div className='w-[100%] h-[10rem] flex items-center'>
+                    <Image
+                      src={'/assets/image/driver.png'}
+                      width={200}
+                      height={200}
+                      alt='User_Image'
+                      style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div>
-                <p className='text-center text-[#F0A714] tracking-[0.05rem] font-medium'>
-                  Customer Service
-                </p>
-              </div>
+                <div>
+                  <p className='text-center text-[#F0A714] tracking-[0.05rem] font-medium'>
+                    Customer Service
+                  </p>
+                </div>
+              </Link>
             </Card>
             <Card className='p-2'>
-              <div>
-                <div className='w-[100%] h-[10rem] flex items-center'>
-                  <Image
-                    src={'/assets/image/quiz.webp'}
-                    width={200}
-                    height={200}
-                    alt='User_Image'
-                    style={{ width: '100%', height: '80%', objectFit: 'contain' }}
-                  />
+              <Link href='/study/test'>
+                <div>
+                  <div className='w-[100%] h-[10rem] flex items-center'>
+                    <Image
+                      src={'/assets/image/quiz.webp'}
+                      width={200}
+                      height={200}
+                      alt='User_Image'
+                      style={{ width: '100%', height: '80%', objectFit: 'contain' }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div>
-                <p className='text-center text-[#F0A714] tracking-[0.05rem] font-medium'>
-                  Quick Quiz
-                </p>
-              </div>
+                <div>
+                  <p className='text-center text-[#F0A714] tracking-[0.05rem] font-medium'>
+                    Quick Quiz
+                  </p>
+                </div>
+              </Link>
             </Card>
           </div>
         </div>
