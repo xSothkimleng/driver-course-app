@@ -1,6 +1,7 @@
 'use client';
 import styled from 'styled-components';
 import { IconLogo } from '@/utils/icon';
+import Link from 'next/link';
 
 const Wrapper = styled.div`
   background-color: #fff;
@@ -47,8 +48,12 @@ const Navbar = () => {
     <Wrapper>
       <div>
         <Menu>
-          <li>{IconLogo.home}</li>
-          <li>{IconLogo.book}</li>
+          <li>
+            <Link href='/'>{IconLogo.home}</Link>
+          </li>
+          <li>
+            <Link href='/lab'>{IconLogo.book}</Link>
+          </li>
           <li>{IconLogo.megaPhone}</li>
           <li>{IconLogo.person}</li>
         </Menu>

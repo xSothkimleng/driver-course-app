@@ -44,9 +44,7 @@ export default function Home() {
         <div>
           <div className='flex justify-between items-end mt-5 mb-2'>
             <p className='font-bold text-2xl'>Quick Access</p>
-            <p className='' style={{ fontSize: '13px' }}>
-              see more
-            </p>
+            <p style={{ fontSize: '13px' }}>see more</p>
           </div>
           <div className='grid grid-cols-2 gap-3'>
             <Card className='p-2'>
