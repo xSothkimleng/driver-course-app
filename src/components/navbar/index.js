@@ -4,18 +4,18 @@ import { IconLogo } from '@/utils/icon';
 import Link from 'next/link';
 
 const Wrapper = styled.div`
+  position: fixed;
+  bottom: 0;
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  position: fixed;
   width: 100%;
-  height: 9vh;
-  bottom: 0;
-  // padding: 1rem;
+  height: 7vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
   @media (max-width: 640px) {
-    padding: 0.5rem;
+    padding: 0;
   }
 `;
 const Menu = styled.ul`
@@ -23,12 +23,13 @@ const Menu = styled.ul`
   flex-direction: row;
   justify-content: center;
   width: 100%;
+
   @media (max-width: 640px) {
     width: 100%;
     justify-content: space-around;
   }
   li {
-    // padding: 1rem 1rem;
+    padding: 1rem 1rem;
     margin: 0 1rem;
     border-radius: 0.5rem;
     @media (max-width: 640px) {
@@ -43,8 +44,8 @@ const Menu = styled.ul`
     width: 3rem;
     height: 3rem;
     @media (max-width: 640px) {
-      width: 2rem;
-      height: 2rem;
+      width: 1.7rem;
+      height: 1.7rem;
     }
   }
 `;

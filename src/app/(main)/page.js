@@ -14,7 +14,7 @@ const Card = styled.div`
 
 export default function Home() {
   return (
-    <main className='h-[100vh]'>
+    <main className='mb-[7vh]'>
       <div>
         <PageHeader>
           <div className='flex items-center justify-between p-[1rem]'>
@@ -113,6 +113,26 @@ export default function Home() {
                 <div>
                   <p className='text-center text-[#F0A714] tracking-[0.05rem] font-medium'>
                     Quick Quiz
+                  </p>
+                </div>
+              </Link>
+            </Card>
+            <Card className='p-2'>
+              <Link href='/study/test'>
+                <div>
+                  <div className='w-[100%] h-[10rem] flex items-center'>
+                    <Image
+                      src={'/assets/image/news.png'}
+                      width={200}
+                      height={200}
+                      alt='User_Image'
+                      style={{ width: '100%', height: '80%', objectFit: 'contain' }}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <p className='text-center text-[#F0A714] tracking-[0.05rem] font-medium'>
+                    Trending News
                   </p>
                 </div>
               </Link>
