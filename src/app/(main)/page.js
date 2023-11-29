@@ -17,9 +17,20 @@ export default function Home() {
     <main className='h-[100vh]'>
       <div>
         <PageHeader>
-          <div className='p-[1rem] text-left md:text-center'>
-            <p className='font-medium text-2xl text-white'>Hello User</p>
-            <p className='text-xl text-white'>Welcome to the Gig Academy!</p>
+          <div className='flex items-center justify-between p-[1rem]'>
+            <div className=' text-left md:text-center'>
+              <p className='font-medium text-2xl text-white'>Hello User</p>
+              <p className='text-xl text-white'>Welcome to the Gig Academy!</p>
+            </div>
+            <div className='w-[3rem] h-[3rem] flex items-center'>
+              <Image
+                src={'/assets/image/logo/logo.png'}
+                alt='logo'
+                width={100}
+                height={100}
+                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+              />
+            </div>
           </div>
         </PageHeader>
       </div>
