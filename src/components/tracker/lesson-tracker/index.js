@@ -1,6 +1,6 @@
 'use client';
 import { Button } from '@material-tailwind/react';
-import styled from 'styled-components';
+import Link from 'next/link';
 
 const LessonTracker = () => {
   return (
@@ -15,7 +15,9 @@ const LessonTracker = () => {
           </p>
         </div>
         <div>
-          <Button className='bg-[green]  p-2'>Continues</Button>
+          <Link href='/study/courses/lesson-page'>
+            <Button className='bg-[green]  p-2'>Continues</Button>
+          </Link>
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ export default function Home() {
         <PageHeader>
           <div className='flex items-center justify-between p-[1rem]'>
             <div className=' text-left md:text-center'>
-              <p className='font-medium text-2xl text-white'>Hello User</p>
+              <p className='font-medium text-2xl text-white'>Hello, Som Monin</p>
               <p className='text-xl text-white'>Welcome to the Gig Academy!</p>
             </div>
             <div className='w-[3rem] h-[3rem] flex items-center'>

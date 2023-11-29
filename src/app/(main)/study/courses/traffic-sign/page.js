@@ -7,27 +7,27 @@ import ImageDetailCard from '@/components/card/image-detail';
 const Data = [
   {
     name: 'Learner Drivers First Ever Driving Lesson - #1',
-    link: '/',
+    link: '/study/courses/lesson-chapter',
     readTime: '20 min',
   },
   {
     name: 'Learner Drivers First Ever Driving Lesson - #2',
-    link: '/',
+    link: '/study/courses/lesson-chapter',
     readTime: '20 min',
   },
   {
     name: 'Learner Drivers First Ever Driving Lesson - #3',
-    link: '/',
+    link: '/study/courses/lesson-chapter',
     readTime: '20 min',
   },
   {
     name: 'Learner Drivers First Ever Driving Lesson - #4',
-    link: '/',
+    link: '/study/courses/lesson-chapter',
     readTime: '20 min',
   },
   {
     name: 'Learner Drivers First Ever Driving Lesson - #5',
-    link: '/',
+    link: '/study/courses/lesson-chapter',
     readTime: '20 min',
   },
 ];

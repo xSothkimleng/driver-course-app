@@ -58,6 +58,18 @@ const ProfilePage = () => {
               </div>
               <p className='font-medium text-sm '>8 March 2001</p>
             </div>
+            <div className='bg-white rounded-xl p-2'>
+              <div className='flex justify-between'>
+                <label className='text-sm'>Total lesson learned</label>
+              </div>
+              <p className='font-medium text-sm '>67/108</p>
+            </div>
+            <div className='bg-white rounded-xl p-2'>
+              <div className='flex justify-between'>
+                <label className='text-sm'>Test Taken</label>
+              </div>
+              <p className='font-medium text-sm '>32/108</p>
+            </div>
             <Link href='/profile/user-certificate'>
               <div className='bg-white rounded-xl p-2 flex justify-between'>
                 <p>Certificate</p>

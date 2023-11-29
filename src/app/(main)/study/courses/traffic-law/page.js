@@ -1,29 +1,26 @@
 import PageHeader from '@/components/page-header';
-import Card from '@/components/card';
-import Link from 'next/link';
-import { IconLogo } from '@/utils/icon';
 import ImageDetailCard from '@/components/card/image-detail';
 
 const Data = [
   {
     name: 'Traffic Law Books',
-    link: '/',
+    link: '/study/courses/lesson-chapter',
   },
   {
     name: 'Traffic Law Lessons',
-    link: '/',
+    link: '/study/courses/lesson-chapter',
   },
   {
     name: 'Traffic Law Questionnaire ',
-    link: '/',
+    link: '/study/courses/lesson-chapter',
   },
   {
     name: 'Prioritizations',
-    link: '/',
+    link: '/study/courses/lesson-chapter',
   },
   {
     name: 'Traffic Signs',
-    link: '/study/courses/traffic-sign',
+    link: '/study/courses/lesson-chapter',
   },
 ];
 

@@ -1,28 +1,25 @@
 import PageHeader from '@/components/page-header';
-import Card from '@/components/card';
-import Link from 'next/link';
-import { IconLogo } from '@/utils/icon';
 import ImageDetailCard from '@/components/card/image-detail';
 
 const Data = [
   {
     name: 'How to deal with rude customers',
-    link: '/',
+    link: '/study/courses/customer-service/guide',
     readTime: '20 min',
   },
   {
     name: 'How to deal with difficult customers',
-    link: '/',
+    link: '/study/courses/customer-service/guide',
     readTime: '20 min',
   },
   {
     name: 'How to deal with angry customers',
-    link: '/',
+    link: '/study/courses/customer-service/guide',
     readTime: '20 min',
   },
   {
     name: 'How to deal with customers',
-    link: '/',
+    link: '/study/courses/customer-service/guide',
     readTime: '20 min',
   },
 ];
@@ -35,7 +32,12 @@ const CustomerServicePage = () => {
       </div>
       <div className='grid grid-cols-1 gap-4 p-[5%]'>
         {Data.map((item, index) => (
-          <ImageDetailCard key={index} detail={item.name} readTime={item.readTime} />
+          <ImageDetailCard
+            key={index}
+            detail={item.name}
+            readTime={item.readTime}
+            url={item.link}
+          />
         ))}
       </div>
     </div>
