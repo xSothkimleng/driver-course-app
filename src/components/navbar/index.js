@@ -62,7 +62,9 @@ const Navbar = () => {
         <li>
           <Link href='/opportunity'> {IconLogo.megaPhone}</Link>
         </li>
-        <li>{IconLogo.person}</li>
+        <li>
+          <Link href='/profile'>{IconLogo.person}</Link>
+        </li>
       </Menu>
     </Wrapper>
   );
