@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const ProfilePage = () => {
   return (
-    <div>
+    <div className='mb-[7vh]'>
       <PageHeader>
         <div className='flex items-center justify-between p-[1rem]'>
           <div className='text-left md:text-center'>
