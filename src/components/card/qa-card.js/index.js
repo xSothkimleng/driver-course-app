@@ -1,14 +1,9 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import AnswerCard from '../answer-card';
 
 const QACard = ({ id, question, image, answers }) => {
-  const [selected, setSelected] = useState(null);
-
-  const handleOnClick = answer => {
-    console.log('answer', answer);
-  };
-
   return (
     <div className='bg-[#fff] rounded-[14px]'>
       <div className='p-2'>
@@ -29,16 +24,7 @@ const QACard = ({ id, question, image, answers }) => {
       )}
       <div className='p-2 grid grid-cols-1 gap-4'>
         {answers.map((answer, index) => (
-          <div
-            key={index}
-            style={{ boxShadow: ' rgba(0, 0, 0, 0.24) 0px 3px 8px', borderRadius: '14px' }}
-            onClick={() => handleOnClick(answer.correct)}>
-            <div className='flex items-center'>
-              <label htmlFor={answer?.option} className='text-center p-2 text-[#21205A]'>
-                {answer?.option}
-              </label>
-            </div>
-          </div>
+          <AnswerCard key={index} answer={answer.option} />
         ))}
       </div>
     </div>
