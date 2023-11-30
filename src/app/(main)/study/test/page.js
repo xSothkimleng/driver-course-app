@@ -3,10 +3,13 @@ import { QAData } from '@/utils/database/qa-data';
 import PageHeader from '@/components/page-header';
 import QACard from '@/components/card/qa-card.js';
 import { Button } from '@material-tailwind/react';
+import { useRouter } from 'next/navigation';
 
 const TestPage = () => {
+  const router = useRouter();
+
   const onSubmit = () => {
-    console.log('submit');
+    router.push('/study/test/result');
   };
 
   return (
